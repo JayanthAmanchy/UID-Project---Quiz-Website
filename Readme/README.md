@@ -21,9 +21,9 @@ It provides:
 4. Contributed to responsive design enhancements.
 
 # Technologies and Additional Features :  
-- HTML5 — Structure and layout of the webpages
-- CSS3 — Styling, animations, responsiveness, and modern UI design
-- JavaScript — Interactive quiz functionality and dynamic content handling
+- HTML5 — Structure and layout of the webpages.  
+- CSS3 — Styling, animations, responsiveness, and modern UI design.  
+- JavaScript — Interactive quiz functionality and dynamic content handling.  
 - Used Framework in the Home Webpage.
-- Visual Studio Code — Development environment used for coding
-- Git & GitHub — Version control and project hosting
+- Visual Studio Code — Development environment used for coding.  
+- Git & GitHub — Version control and project hosting.  
