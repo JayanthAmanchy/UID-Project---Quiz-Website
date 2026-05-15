@@ -42,7 +42,6 @@ const optionsElement = document.getElementById("options");
 const resultElement = document.getElementById("result");
 
 
-// Timer
 
 let timeLeft = 30;
 
@@ -62,7 +61,6 @@ let countdown = setInterval(function(){
 },1000);
 
 
-// Load Question
 
 function loadQuestion(){
 
@@ -85,7 +83,7 @@ function loadQuestion(){
         
         `;
 
-        // Click event
+
 
         optionDiv.addEventListener("click", function(){
 
@@ -100,7 +98,7 @@ function loadQuestion(){
 }
 
 
-// Check Answer
+
 
 function checkAnswer(selectedOption){
 
@@ -139,14 +137,13 @@ function checkAnswer(selectedOption){
 }
 
 
-// Show Result
+
 
 function showResult(){
 
-    // Stop timer
     clearInterval(countdown);
 
-    // Hide timer
+
     timer.style.display = "none";
 
     questionElement.innerHTML = "Quiz Completed!";
