@@ -195,7 +195,4 @@ function showResult(){
     }
 }
 
-
-// Start Quiz
-
 loadQuestion();
