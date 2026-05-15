@@ -1,6 +1,3 @@
-/* =========================
-    GLOBAL RESET
-========================= */
 * {
     margin: 0;
     padding: 0;
@@ -13,7 +10,6 @@ body {
     justify-content: center;
     align-items: center;
     font-family: Arial, sans-serif;
-    /* Consistent dark cool-toned background from Home */
     background: linear-gradient(
         to bottom right,
         #050505,
@@ -24,16 +20,12 @@ body {
     padding: 20px;
 }
 
-/* =========================
-    LOGIN BOX
-========================= */
 .login-box {
     width: 400px;
     max-width: 100%;
-    background: rgba(20, 22, 25, 0.95); /* Matches About/Contact cards */
+    background: rgba(20, 22, 25, 0.95);
     padding: 40px;
     border-radius: 22px;
-    /* Silver border instead of gold */
     border: 1px solid rgba(184, 184, 184, 0.2);
     box-shadow: 
         0px 15px 35px rgba(0,0,0,0.7), 
@@ -51,21 +43,15 @@ body {
         0px 0px 30px rgba(184, 184, 184, 0.15);
 }
 
-/* =========================
-    TITLE (Platinum/Silver)
-========================= */
 .login-box h1 {
     margin-bottom: 30px;
-    color: #E5E4E2; /* Platinum */
+    color: #E5E4E2; 
     font-size: 32px;
     letter-spacing: 2px;
     text-transform: uppercase;
     text-shadow: 0px 0px 15px rgba(184, 184, 184, 0.3);
 }
 
-/* =========================
-    INPUTS
-========================= */
 .input-box {
     margin: 20px 0;
     text-align: left;
@@ -74,7 +60,7 @@ body {
 .input-box input {
     width: 100%;
     padding: 14px 18px;
-    background: #0a0a0a; /* Darker input background */
+    background: #0a0a0a; 
     border: 1px solid rgba(184, 184, 184, 0.2);
     border-radius: 12px;
     outline: none;
@@ -84,26 +70,21 @@ body {
 }
 
 .input-box input:focus {
-    border: 1px solid #B8B8B8; /* Silver focus */
+    border: 1px solid #B8B8B8;
     background: #111111;
     box-shadow: 0px 0px 12px rgba(184, 184, 184, 0.2);
 }
 
-/* Placeholder color */
 .input-box input::placeholder {
     color: #666;
 }
 
-/* =========================
-    BUTTON (Metallic Silver Gradient)
-========================= */
 .login-btn {
     width: 100%;
     padding: 15px;
     margin-top: 15px;
     border: none;
     border-radius: 12px;
-    /* Luxury Silver Gradient */
     background: linear-gradient(to right, #9A9A9A, #E5E4E2);
     color: black;
     font-size: 17px;
@@ -120,9 +101,6 @@ body {
     box-shadow: 0px 8px 25px rgba(184, 184, 184, 0.4);
 }
 
-/* =========================
-    SIGNUP TEXT
-========================= */
 .signup-text {
     margin-top: 25px;
     font-size: 14px;
@@ -130,7 +108,7 @@ body {
 }
 
 .signup-text a {
-    color: #E5E4E2; /* Platinum Link */
+    color: #E5E4E2; 
     text-decoration: none;
     font-weight: bold;
     transition: 0.3s;
@@ -143,11 +121,6 @@ body {
     text-shadow: 0px 0px 8px rgba(184, 184, 184, 0.5);
 }
 
-/* =========================
-    RESPONSIVENESS
-========================= */
-
-/* Tablets and small laptops */
 @media (max-width: 768px) {
     .login-box {
         width: 380px;
@@ -155,10 +128,9 @@ body {
     }
 }
 
-/* Mobile Phones */
 @media (max-width: 480px) {
     body {
-        align-items: flex-start; /* Better for small screens with keyboards */
+        align-items: flex-start;
         padding-top: 60px;
     }
 
@@ -166,7 +138,7 @@ body {
         width: 100%;
         padding: 30px 20px;
         border-radius: 15px;
-        background: rgba(20, 22, 25, 1); /* Solid background on mobile for clarity */
+        background: rgba(20, 22, 25, 1);
     }
 
     .login-box h1 {
