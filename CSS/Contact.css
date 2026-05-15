@@ -12,13 +12,10 @@ body {
         #1b1d20
     );
     min-height: 100vh;
-    font-family: Arial, sans-serif; /* Reverted to your original font */
+    font-family: Arial, sans-serif;
     color: white;
 }
 
-/* =========================
-    HEADER / NAVIGATION
-========================= */
 .top {
     background: linear-gradient(
         to right,
@@ -28,7 +25,7 @@ body {
         #1f1f1f,
         #111111
     );
-    padding: 15px 30px; /* Original Padding */
+    padding: 15px 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -36,53 +33,50 @@ body {
     width: 100%;
     top: 0;
     z-index: 1000;
-    border-bottom: 2px solid #B8B8B8; /* Silver Border */
+    border-bottom: 2px solid #B8B8B8;
     box-shadow: 0px 4px 15px rgba(184, 184, 184, 0.1);
 }
 
 .nav_left, .nav {
     display: flex;
-    gap: 20px; /* Original Gap */
+    gap: 20px; 
 }
 
 .circle {
     border: 4px solid #E5E4E2;
     border-radius: 50%;
-    height: 90px; /* Original Size */
-    width: 90px; /* Original Size */
+    height: 90px;
+    width: 90px; 
     object-fit: cover;
     background: #E5E4E2;
     box-shadow: 0px 0px 15px rgba(184, 184, 184, 0.3);
 }
 
 .nav_button {
-    border: 2px solid #B8B8B8; /* Original thickness, Silver color */
-    border-radius: 12px; /* Original Radius */
-    padding: 10px 18px; /* Original Padding - AS REQUESTED */
+    border: 2px solid #B8B8B8;
+    border-radius: 12px; 
+    padding: 10px 18px; 
     background-color: #111111;
-    color: #B8B8B8; /* Silver Text */
-    font-size: 16px; /* Original Font Size */
+    color: #B8B8B8; 
+    font-size: 16px; 
     cursor: pointer;
     transition: 0.3s;
     font-weight: bold;
 }
 
 .nav_button:hover {
-    transform: scale(1.08); /* Original Hover Scale */
+    transform: scale(1.08); 
     background-color: #B8B8B8;
     color: black;
     box-shadow: 0px 0px 15px rgba(184, 184, 184, 0.5);
 }
 
-/* =========================
-    MAIN FORM CONTAINER
-========================= */
 .main-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 160px 20px 40px 20px; /* Increased padding to accommodate the large header */
+    padding: 160px 20px 40px 20px;
 }
 
 .contact {
@@ -103,7 +97,7 @@ body {
     text-align: center;
     font-size: 40px;
     margin-bottom: 25px;
-    color: #E5E4E2; /* Platinum */
+    color: #E5E4E2; 
     text-decoration: underline;
 }
 
@@ -135,7 +129,6 @@ input:focus, textarea:focus {
     border: 2px solid #B8B8B8;
 }
 
-/* Submit Button */
 button {
     width: 100%;
     padding: 12px;
@@ -154,9 +147,6 @@ button:hover {
     box-shadow: 0px 0px 15px rgba(184, 184, 184, 0.4);
 }
 
-/* =========================
-    FOOTER INFO
-========================= */
 .contact-info {
     text-align: center;
     margin-top: 25px;
@@ -176,14 +166,11 @@ button:hover {
     color: #B8B8B8;
 }
 
-/* =========================
-    RESPONSIVENESS
-========================= */
 @media(max-width:768px){
     .top {
         flex-direction: column;
         gap: 20px;
-        position: relative; /* Header flows with content on smaller screens */
+        position: relative;
     }
     
     .main-container {
