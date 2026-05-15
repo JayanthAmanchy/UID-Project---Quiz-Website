@@ -4,9 +4,6 @@ function login(){
 
     let password = document.getElementById("password").value;
 
-    
-    // Demo credentials
-
     if(username === "admin" && password === "1234"){
 
         alert("Login Successful !");
