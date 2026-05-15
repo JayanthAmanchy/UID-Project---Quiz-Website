@@ -174,3 +174,151 @@ body {
     color: white;
     border: 1px solid rgba(184, 184, 184, 0.25);
 }
+@media screen and (max-width: 900px){
+
+    .top{
+        height: auto;
+        padding: 20px;
+    }
+
+    .circle{
+        width: 120px;
+        height: 85px;
+    }
+
+    .nav_button{
+        width: 100px;
+        height: 45px;
+        font-size: 14px;
+    }
+
+    .box,
+    .box2{
+        width: 320px;
+    }
+}
+
+
+/* =========================
+   MOBILE & TABLET
+========================= */
+
+@media screen and (max-width: 790px){
+
+    /* Header */
+    .top{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        height: auto;
+        padding: 25px 15px;
+        gap: 20px;
+
+        position: relative;
+    }
+
+    /* Remove absolute positioning */
+    .nav,
+    .nav_left{
+        position: static;
+        transform: none;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        flex-wrap: wrap;
+        gap: 15px;
+
+        width: 100%;
+    }
+
+    /* Logo */
+    .circle{
+        width: 110px;
+        height: 80px;
+    }
+
+    /* Buttons */
+    .nav_button{
+        width: 95px;
+        height: 42px;
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    /* Cards */
+    .row{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box,
+    .box2{
+        width: 90%;
+        max-width: 400px;
+    }
+
+    .box{
+        height: auto;
+        min-height: 450px;
+    }
+}
+
+
+@media screen and (max-width: 480px){
+
+    body{
+        overflow-x: hidden;
+    }
+
+    .top{
+        padding: 20px 10px;
+        gap: 15px;
+    }
+
+    .circle{
+        width: 90px;
+        height: 70px;
+    }
+
+    .nav,
+    .nav_left{
+        gap: 10px;
+    }
+
+    .nav_button{
+        width: 80px;
+        height: 38px;
+
+        font-size: 12px;
+        border-radius: 10px;
+    }
+
+    .button{
+        width: 100%;
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+
+    .box,
+    .box2{
+        width: 95%;
+        padding: 18px;
+    }
+
+    .box{
+        min-height: auto;
+    }
+
+    h1{
+        font-size: 28px;
+        text-align: center;
+    }
+
+    p{
+        font-size: 14px;
+        line-height: 1.6;
+    }
+}
