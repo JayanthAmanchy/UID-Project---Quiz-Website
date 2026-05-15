@@ -1,18 +1,19 @@
-let science_selected = false;
-let sports_selected = false;
-let tech_selected = false;
-let maths_selected = false;
-let selected = false;
+function science(){
+    openPage("Science.html");
+}
 
-    function science() {
-        window.location.href = "Science.html";
-    }
-    function maths() {
-        window.location.href = "Maths.html";
-    }
-    function generalknowledge() {
-        window.location.href = "GK.html";
-    }
-    function tech() {
-        window.location.href = "Technology.html";
-    }
+function maths(){
+    openPage("Maths.html");
+}
+
+function tech(){
+    openPage("Tech.html");
+}
+
+function gk(){
+    openPage("GK.html");
+}
+
+function openPage(page){
+    window.location.href = page;
+}
