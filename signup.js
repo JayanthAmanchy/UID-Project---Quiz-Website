@@ -6,10 +6,15 @@ function showMessage(event) {
     let lastname = document.getElementById("lastName").value;
     let email = document.getElementById("email").value;
     let password = document.getElementById("password").value;
+
     if(password.length < 8) {
+
         alert("Password must be at least 8 characters long.");
         return;
+
     }
+    localStorage.setItem("username", email);
+    localStorage.setItem("password", password);
 
     document.getElementById("signup").innerHTML = `
 
@@ -23,7 +28,6 @@ function showMessage(event) {
     `;
     
 }
-
 function goToLogin() {
     window.location.href = "Log in.html";
 }
