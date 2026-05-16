@@ -10,7 +10,7 @@ function tech(){
     openPage("Technology.html");
 }
 
-function generalknowledgek(){
+function generalknowledge(){
     openPage("GK.html");
 }
 
