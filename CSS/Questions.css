@@ -1,155 +1,278 @@
+/* =========================
+   QUESTIONS.CSS
+========================= */
+
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
 }
 
+/* =========================
+   BODY
+========================= */
+
 body{
+
     margin:0;
+
     padding:20px;
+
     min-height:100vh;
+
     display:flex;
+
     justify-content:center;
+
     align-items:center;
+
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
     background: linear-gradient(
         to bottom right,
         #050505,
-        #121417,
-        #1b1d20
+        #121212,
+        #1e1e1e
     );
+
     color:white;
 }
 
+/* =========================
+   QUIZ BOX
+========================= */
+
 .quiz-box{
+
     width:400px;
+
     max-width:100%;
-    background:rgba(20, 22, 25, 0.92);
+
+    background:rgba(30, 30, 30, 0.95);
+
     padding:30px;
+
     border-radius:22px;
-    border:1px solid rgba(184, 184, 184, 0.25);
+
+    border:1px solid rgba(255, 152, 0, 0.25);
+
     backdrop-filter:blur(12px);
+
     text-align:center;
+
     box-shadow:
         0px 8px 20px rgba(0,0,0,0.7),
-        0px 0px 18px rgba(184, 184, 184, 0.15);
+        0px 0px 18px rgba(255, 152, 0, 0.15);
+
     transition:0.4s;
 }
 
 .quiz-box:hover{
+
     transform:translateY(-5px);
+
     box-shadow:
         0px 12px 28px rgba(0,0,0,0.8),
-        0px 0px 25px rgba(184, 184, 184, 0.3);
+        0px 0px 25px rgba(255, 152, 0, 0.3);
 }
+
+/* =========================
+   TIMER
+========================= */
 
 .timer{
-    /* Platinum text */
-    color:#E5E4E2;
+
+    color:#ff9800;
+
     font-weight:bold;
+
     margin-bottom:18px;
+
     font-size:22px;
-    text-shadow:0px 0px 10px rgba(184, 184, 184, 0.4);
+
+    text-shadow:0px 0px 10px rgba(255, 152, 0, 0.4);
 }
 
+/* =========================
+   QUESTION
+========================= */
+
 .question{
+
     font-size:22px;
+
     margin-bottom:25px;
+
     font-weight:bold;
+
     color:white;
+
     line-height:1.5;
 }
 
+/* =========================
+   OPTIONS
+========================= */
+
 .option{
+
     margin:14px 0;
 }
 
 .option input[type="radio"]{
+
     display:none;
 }
 
 .option label{
+
     display:block;
+
     padding:14px;
-    border:2px solid rgba(184, 184, 184, 0.2);
+
+    border:2px solid rgba(255, 152, 0, 0.2);
+
     border-radius:14px;
+
     background:#121212;
-    color:#E5E4E2;
+
+    color:#ff9800;
+
     cursor:pointer;
+
     transition:0.3s;
+
     font-weight:bold;
+
     box-shadow:0px 3px 10px rgba(0,0,0,0.3);
 }
 
+/* =========================
+   OPTION HOVER
+========================= */
+
 .option label:hover{
-    background:rgba(184, 184, 184, 0.08);
-    border:2px solid #B8B8B8;
+
+    background:rgba(255, 152, 0, 0.08);
+
+    border:2px solid #ff9800;
+
     transform:scale(1.02);
-    box-shadow:0px 0px 12px rgba(184, 184, 184, 0.2);
+
+    box-shadow:0px 0px 12px rgba(255, 152, 0, 0.2);
 }
+
+/* =========================
+   SELECTED OPTION
+========================= */
 
 .option input[type="radio"]:checked + label{
+
     background: linear-gradient(
         to right,
-        #9A9A9A,
-        #E5E4E2
+        #ff9800,
+        #ff5722
     );
-    color:black;
-    border-color:#E5E4E2;
-    box-shadow:0px 0px 18px rgba(184, 184, 184, 0.5);
+
+    color:white;
+
+    border-color:#ff9800;
+
+    box-shadow:0px 0px 18px rgba(255, 152, 0, 0.5);
 }
 
+/* =========================
+   RESULT SECTION
+========================= */
+
 .result{
+
     text-align:left;
+
     margin-top:25px;
+
     padding-top:18px;
-    border-top:1px solid rgba(184, 184, 184, 0.2);
+
+    border-top:1px solid rgba(255, 152, 0, 0.2);
+
     color:#dddddd;
 }
 
+/* =========================
+   CORRECT / WRONG
+========================= */
+
 .correct{
-    color:#FFFFFF;
+
+    color:#ffb74d;
+
     font-weight:bold;
-    text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.3);
+
+    text-shadow: 0px 0px 5px rgba(255, 152, 0, 0.3);
 }
 
 .wrong{
+
     color:#ff7070;
+
     font-weight:bold;
 }
 
+/* =========================
+   RESPONSIVE
+========================= */
+
 @media (max-width:1200px){
+
     .quiz-box{
+
         width:420px;
     }
 }
 
 @media (max-width:768px){
+
     .quiz-box{
+
         width:90%;
+
         padding:25px;
     }
+
     .question{
+
         font-size:20px;
     }
 }
 
 @media (max-width:480px){
+
     body{
+
         padding:10px;
     }
+
     .quiz-box{
+
         padding:20px;
+
         border-radius:18px;
     }
+
     .timer{
+
         font-size:18px;
     }
+
     .question{
+
         font-size:18px;
     }
+
     .option label{
+
         padding:12px;
+
         font-size:15px;
     }
 }
