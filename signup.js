@@ -25,5 +25,5 @@ function showMessage(event) {
 }
 
 function goToLogin() {
-    window.location.href = "login.html";
+    window.location.href = "Log in.html";
 }
