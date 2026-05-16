@@ -1,3 +1,7 @@
+/* =========================
+   ABOUT US.CSS
+========================= */
+
 * {
     margin: 0;
     padding: 0;
@@ -10,8 +14,8 @@ body {
     background: linear-gradient(
         to bottom right,
         #050505,
-        #121417,
-        #1b1d20
+        #121212,
+        #1e1e1e
     );
     color: white;
     min-height: 100vh;
@@ -21,9 +25,9 @@ body {
     background: linear-gradient(
         to right,
         #111111,
-        #1f1f1f,
+        #1e1e1e,
         #000000,
-        #1f1f1f,
+        #1e1e1e,
         #111111
     );
 
@@ -38,8 +42,8 @@ body {
 
     z-index: 1000;
 
-    border-bottom: 2px solid #B8B8B8;
-    box-shadow: 0px 4px 15px rgba(184, 184, 184, 0.1);
+    border-bottom: 2px solid #ff9800;
+    box-shadow: 0px 4px 15px rgba(255, 152, 0, 0.15);
 
     position: relative;
 }
@@ -67,46 +71,33 @@ body {
 }
 
 .circle {
-    border: 4px solid #E5E4E2;
+    border: 4px solid #ff9800;
     border-radius: 50%;
 
     height: 95px;
     width: 95px;
 
     object-fit: cover;
-    background: #E5E4E2;
+    background: #ff9800;
 
-    box-shadow: 0px 0px 20px rgba(229, 228, 226, 0.3);
+    box-shadow: 0px 0px 20px rgba(255, 152, 0, 0.4);
 
     transition: 0.3s;
-}
-
-.nav_button {
-    border: 2px solid #B8B8B8;
-    border-radius: 12px;
-    padding: 10px 18px;
-    background-color: #111111;
-    color: #B8B8B8;
-    font-size: 16px;
-    cursor: pointer;
-    transition: 0.3s;
-    font-weight: bold;
-    white-space: nowrap; 
 }
 
 .circle:hover {
     transform: scale(1.05);
-    box-shadow: 0px 0px 30px rgba(229, 228, 226, 0.5);
+    box-shadow: 0px 0px 30px rgba(255, 152, 0, 0.6);
 }
 
 .nav_button {
-    border: 2px solid #B8B8B8;
+    border: 2px solid #ff9800;
     border-radius: 12px;
 
     padding: 10px 18px;
 
-    background-color: #111111;
-    color: #B8B8B8;
+    background-color: #121212;
+    color: #ff9800;
 
     font-size: 16px;
     font-weight: bold;
@@ -120,15 +111,14 @@ body {
 .nav_button:hover {
     transform: scale(1.08);
 
-    background-color: #B8B8B8;
+    background-color: #ff9800;
     color: black;
 
-    box-shadow: 0px 0px 15px rgba(184, 184, 184, 0.5);
+    box-shadow: 0px 0px 15px rgba(255, 152, 0, 0.5);
 }
 
 .about-section {
-
-    padding: 180px 20px 60px 20px; 
+    padding: 180px 20px 60px 20px;
 }
 
 .container {
@@ -138,7 +128,7 @@ body {
 
 h1 {
     text-align: center;
-    color: #E5E4E2; 
+    color: #ff9800;
     margin-bottom: 20px;
     font-size: 40px;
     letter-spacing: 1px;
@@ -147,31 +137,31 @@ h1 {
 .intro {
     text-align: center;
     font-size: 18px;
-    color: #cccccc; 
+    color: #cccccc;
     margin-bottom: 40px;
 }
 
 .about-box {
-    background: rgba(20, 22, 25, 0.9);
+    background: rgba(30, 30, 30, 0.95);
     padding: 30px;
     margin-bottom: 25px;
     border-radius: 15px;
-    border: 1px solid rgba(184, 184, 184, 0.2);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 152, 0, 0.2);
+    box-shadow: 0 8px 20px rgba(255, 152, 0, 0.15);
     backdrop-filter: blur(10px);
 }
 
 .about-box h2 {
-    color: #B8B8B8; 
+    color: #ff9800;
     margin-bottom: 15px;
     font-size: 24px;
-    border-left: 4px solid #B8B8B8;
+    border-left: 4px solid #ff9800;
     padding-left: 15px;
 }
 
 .about-box p,
 .about-box li {
-    color: #e0e0e0;
+    color: #f5f5f5;
     line-height: 1.8;
 }
 
@@ -185,19 +175,19 @@ button:not(.nav_button) {
     margin: 20px auto;
     padding: 12px 28px;
     border: none;
-    background: linear-gradient(to right, #B8B8B8, #E5E4E2);
-    color: black;
+    background: linear-gradient(to right, #ff9800, #ff5722);
+    color: white;
     border-radius: 8px;
     font-size: 16px;
     font-weight: bold;
     cursor: pointer;
     transition: 0.3s;
-    box-shadow: 0px 4px 12px rgba(184, 184, 184, 0.2);
+    box-shadow: 0px 4px 12px rgba(255, 152, 0, 0.2);
 }
 
 button:not(.nav_button):hover {
     transform: translateY(-3px);
-    box-shadow: 0px 8px 20px rgba(184, 184, 184, 0.4);
+    box-shadow: 0px 8px 20px rgba(255, 152, 0, 0.4);
     filter: brightness(1.1);
 }
 
@@ -211,25 +201,4 @@ button:not(.nav_button):hover {
     color: #cccccc;
     margin-top: 15px;
     line-height: 1.6;
-}
-
-@media(max-width: 768px) {
-
-    .top {
-        flex-direction: column;
-        gap: 20px;
-        padding: 20px;
-    }
-
-    .logo {
-        position: static;
-        transform: none;
-    }
-
-    .nav_left,
-    .nav_right {
-        justify-content: center;
-        width: 100%;
-        flex-wrap: wrap;
-    }
 }
