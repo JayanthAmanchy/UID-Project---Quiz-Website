@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quiz Dashboard</title>
+<link rel="stylesheet" href="Quiz Dashboard.css">
+</head>
+
+<body>
+
+    <div class = "top">
+        <div class="nav_left">
+            <button onclick="window.location.href='Home.html'" class="nav_button">Home</button>
+            <button onclick="window.location.href='Log in.html'" class="nav_button">Dashboard</button>
+        </div>
+        <img src="QuizMasterLogo.jpg" class="circle">
+        <div class="nav">
+            <button onclick="window.location.href='About Us.html'" class="nav_button">About us</button>
+            <button onclick="window.location.href='Contact.html'" class="nav_button">Contact</button>
+       </div>
+    </div>
+
+<h1 class="dashboard-title">
+    ELITE QUIZ Dashboard
+</h1>
+
+<div class="dashboard-container">
+
+
+    <!-- 1. Welcome Section -->
+
+    <div class="card">
+        <h2>Welcome 👋</h2>
+
+        <p>Hello Jayanth!</p>
+
+        <p>Ready for today's quiz challenge?</p>
+    </div>
+
+
+
+    <!-- 2. Statistics -->
+
+    <div class="card stats">
+
+        <h2>Quiz Statistics 📊</h2>
+
+        <p>Total Quizzes: 12</p>
+
+        <p>Highest Score: 9/10</p>
+
+        <p>Average Score: 7/10</p>
+
+        <p>Total Correct Answers: 85</p>
+
+    </div>
+
+
+
+    <!-- 3. Progress Bars -->
+
+    <div class="card">
+
+        <h2>Subject Progress 📚</h2>
+
+        <div class="progress-box">
+
+            <span>Science - 80%</span>
+
+            <div class="progress">
+                <div class="progress-fill" style="width:80%"></div>
+            </div>
+
+        </div>
+
+
+        <div class="progress-box">
+
+            <span>Maths - 65%</span>
+
+            <div class="progress">
+                <div class="progress-fill" style="width:65%"></div>
+            </div>
+
+        </div>
+
+
+        <div class="progress-box">
+
+            <span>Technology - 90%</span>
+
+            <div class="progress">
+                <div class="progress-fill" style="width:90%"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- 4. Recent Activity -->
+
+    <div class="card activity">
+
+        <h2>Recent Activity 🕒</h2>
+
+        <p>✔ Completed Science Quiz</p>
+
+        <p>✔ Scored 8/10 in Technology</p>
+
+        <p>✔ Attempted Maths Quiz</p>
+
+    </div>
+
+    <!-- 14. Admin Dashboard -->
+
+    <div class="card admin">
+
+        <h2>Admin Panel 🛠️</h2>
+
+        <input type="text" placeholder="Enter Question">
+
+        <input type="text" placeholder="Option 1">
+
+        <input type="text" placeholder="Option 2">
+
+        <input type="text" placeholder="Correct Answer">
+
+        <button>Add Question</button>
+
+    </div>
+
+</div>
+
+</body>
+</html>

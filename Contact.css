@@ -1,0 +1,207 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(
+        to bottom right,
+        #050505,
+        #121417,
+        #1b1d20
+    );
+    min-height: 100vh;
+    font-family: Arial, sans-serif; /* Reverted to your original font */
+    color: white;
+}
+
+/* =========================
+    HEADER / NAVIGATION
+========================= */
+.top {
+    background: linear-gradient(
+        to right,
+        #111111,
+        #1f1f1f,
+        #000000,
+        #1f1f1f,
+        #111111
+    );
+    padding: 15px 30px; /* Original Padding */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed; 
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 2px solid #B8B8B8; /* Silver Border */
+    box-shadow: 0px 4px 15px rgba(184, 184, 184, 0.1);
+}
+
+.nav_left, .nav {
+    display: flex;
+    gap: 20px; /* Original Gap */
+}
+
+.circle {
+    border: 4px solid #E5E4E2;
+    border-radius: 50%;
+    height: 90px; /* Original Size */
+    width: 90px; /* Original Size */
+    object-fit: cover;
+    background: #E5E4E2;
+    box-shadow: 0px 0px 15px rgba(184, 184, 184, 0.3);
+}
+
+.nav_button {
+    border: 2px solid #B8B8B8; /* Original thickness, Silver color */
+    border-radius: 12px; /* Original Radius */
+    padding: 10px 18px; /* Original Padding - AS REQUESTED */
+    background-color: #111111;
+    color: #B8B8B8; /* Silver Text */
+    font-size: 16px; /* Original Font Size */
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+.nav_button:hover {
+    transform: scale(1.08); /* Original Hover Scale */
+    background-color: #B8B8B8;
+    color: black;
+    box-shadow: 0px 0px 15px rgba(184, 184, 184, 0.5);
+}
+
+/* =========================
+    MAIN FORM CONTAINER
+========================= */
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 160px 20px 40px 20px; /* Increased padding to accommodate the large header */
+}
+
+.contact {
+    border: 2px solid #B8B8B8;
+    background: rgba(10,10,10,0.95);
+    width: 100%;
+    max-width: 420px;
+    color: white;
+    border-radius: 15px;
+    box-shadow: 0 0 25px rgba(184, 184, 184, 0.2);
+}
+
+.cont {
+    padding: 35px;
+}
+
+#heading {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 25px;
+    color: #E5E4E2; /* Platinum */
+    text-decoration: underline;
+}
+
+label {
+    font-size: 18px;
+    font-weight: bold;
+    color: #B8B8B8;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    margin-bottom: 18px;
+    background: #1a1a1a;
+    border: 1px solid rgba(184, 184, 184, 0.2);
+    border-radius: 8px;
+    outline: none;
+    font-size: 15px;
+    color: white;
+}
+
+textarea {
+    resize: none;
+    height: 120px;
+}
+
+input:focus, textarea:focus {
+    border: 2px solid #B8B8B8;
+}
+
+/* Submit Button */
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: #B8B8B8;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.03);
+    box-shadow: 0px 0px 15px rgba(184, 184, 184, 0.4);
+}
+
+/* =========================
+    FOOTER INFO
+========================= */
+.contact-info {
+    text-align: center;
+    margin-top: 25px;
+    color: white;
+    font-size: 18px;
+}
+
+.contact-info a {
+    color: #B8B8B8;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#dr {
+    text-decoration: underline;
+    font-weight: bold;
+    color: #B8B8B8;
+}
+
+/* =========================
+    RESPONSIVENESS
+========================= */
+@media(max-width:768px){
+    .top {
+        flex-direction: column;
+        gap: 20px;
+        position: relative; /* Header flows with content on smaller screens */
+    }
+    
+    .main-container {
+        padding-top: 40px;
+    }
+
+    .nav, .nav_left {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+@media(max-width:500px){
+    .contact {
+        width: 95%;
+    }
+
+    #heading {
+        font-size: 32px;
+    }
+}

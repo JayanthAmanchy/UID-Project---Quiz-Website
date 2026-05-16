@@ -1,0 +1,190 @@
+/* =========================
+    GLOBAL RESET
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    /* Consistent dark cool-toned background from Home */
+    background: linear-gradient(
+        to bottom right,
+        #050505,
+        #121417,
+        #1b1d20
+    );
+    color: white;
+    padding: 20px;
+}
+
+/* =========================
+    LOGIN BOX
+========================= */
+.login-box {
+    width: 400px;
+    max-width: 100%;
+    background: rgba(20, 22, 25, 0.95); /* Matches About/Contact cards */
+    padding: 40px;
+    border-radius: 22px;
+    /* Silver border instead of gold */
+    border: 1px solid rgba(184, 184, 184, 0.2);
+    box-shadow: 
+        0px 15px 35px rgba(0,0,0,0.7), 
+        0px 0px 20px rgba(184, 184, 184, 0.05);
+    text-align: center;
+    backdrop-filter: blur(12px);
+    transition: 0.4s ease;
+}
+
+.login-box:hover {
+    transform: translateY(-5px);
+    border: 1px solid rgba(184, 184, 184, 0.4);
+    box-shadow: 
+        0px 20px 40px rgba(0,0,0,0.8), 
+        0px 0px 30px rgba(184, 184, 184, 0.15);
+}
+
+/* =========================
+    TITLE (Platinum/Silver)
+========================= */
+.login-box h1 {
+    margin-bottom: 30px;
+    color: #E5E4E2; /* Platinum */
+    font-size: 32px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-shadow: 0px 0px 15px rgba(184, 184, 184, 0.3);
+}
+
+/* =========================
+    INPUTS
+========================= */
+.input-box {
+    margin: 20px 0;
+    text-align: left;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 14px 18px;
+    background: #0a0a0a; /* Darker input background */
+    border: 1px solid rgba(184, 184, 184, 0.2);
+    border-radius: 12px;
+    outline: none;
+    font-size: 16px;
+    color: white;
+    transition: 0.3s;
+}
+
+.input-box input:focus {
+    border: 1px solid #B8B8B8; /* Silver focus */
+    background: #111111;
+    box-shadow: 0px 0px 12px rgba(184, 184, 184, 0.2);
+}
+
+/* Placeholder color */
+.input-box input::placeholder {
+    color: #666;
+}
+
+/* =========================
+    BUTTON (Metallic Silver Gradient)
+========================= */
+.login-btn {
+    width: 100%;
+    padding: 15px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 12px;
+    /* Luxury Silver Gradient */
+    background: linear-gradient(to right, #9A9A9A, #E5E4E2);
+    color: black;
+    font-size: 17px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.4s;
+    box-shadow: 0px 4px 15px rgba(184, 184, 184, 0.2);
+}
+
+.login-btn:hover {
+    filter: brightness(1.1);
+    transform: scale(1.02);
+    box-shadow: 0px 8px 25px rgba(184, 184, 184, 0.4);
+}
+
+/* =========================
+    SIGNUP TEXT
+========================= */
+.signup-text {
+    margin-top: 25px;
+    font-size: 14px;
+    color: #999;
+}
+
+.signup-text a {
+    color: #E5E4E2; /* Platinum Link */
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+    margin-left: 5px;
+}
+
+.signup-text a:hover {
+    color: white;
+    text-decoration: underline;
+    text-shadow: 0px 0px 8px rgba(184, 184, 184, 0.5);
+}
+
+/* =========================
+    RESPONSIVENESS
+========================= */
+
+/* Tablets and small laptops */
+@media (max-width: 768px) {
+    .login-box {
+        width: 380px;
+        padding: 35px;
+    }
+}
+
+/* Mobile Phones */
+@media (max-width: 480px) {
+    body {
+        align-items: flex-start; /* Better for small screens with keyboards */
+        padding-top: 60px;
+    }
+
+    .login-box {
+        width: 100%;
+        padding: 30px 20px;
+        border-radius: 15px;
+        background: rgba(20, 22, 25, 1); /* Solid background on mobile for clarity */
+    }
+
+    .login-box h1 {
+        font-size: 26px;
+        margin-bottom: 20px;
+    }
+
+    .input-box input {
+        padding: 12px 15px;
+        font-size: 15px;
+    }
+
+    .login-btn {
+        padding: 13px;
+        font-size: 16px;
+    }
+
+    .signup-text {
+        font-size: 13px;
+    }
+}

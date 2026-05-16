@@ -1,0 +1,78 @@
+HMTL                                                                                                                                                                         <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+
+    <link rel="stylesheet" href="Contact.css">
+</head>
+
+<body>
+
+    <div class="top">
+
+        <div class="nav_left">
+            <button onclick="window.location.href='Home.html'" class="nav_button">Home</button>
+            <button onclick="window.location.href='Log in.html'" class="nav_button">Dashboard</button>
+        </div>
+
+        <div class="logo">
+            <img src="QuizMasterLogo.jpg" class="circle">
+        </div>
+
+        <div class="nav">
+            <button onclick="window.location.href='About Us.html'" class="nav_button">About us</button>
+            <button onclick="window.location.href='Contact.html'" class="nav_button">Contact</button>
+        </div>
+
+    </div>
+
+    <div class="main-container">
+
+        <div class="contact">
+
+            <div class="cont">
+                <h2 id="heading">Contact Us</h2>
+                <form name="contact" onsubmit="return recieved()">
+                    <label for="username">Name</label><br>
+                    <input type="text" id="username" name="username" placeholder="Enter your name">
+
+                    <label for="mail">E-mail</label><br>
+                    <input type="email" id="mail" name="mail" placeholder="Enter your e-mail" required>
+
+                    <label for="num">Phone No.</label><br>
+                    <input type="tel" id="num" name="num" placeholder="Enter your phone number">
+
+                    <label for="comments">Queries</label><br>
+                    <textarea name="coments" placeholder="Enter your queries here....." required></textarea>
+
+                    <button type="submit">Submit Queries</button>
+
+                    <p id="success"></p>
+                </form>
+            </div>
+        </div>
+
+        <div class="contact-info">
+            <p id="dr">Directly reach out to us</p>
+            <p>
+                Email :
+                <a href="mailto:shanthanushenoy@gmail.com">
+                    shanthanushenoy@gmail.com
+                </a>
+            </p>
+
+            <p>
+                Phone :
+                <a href="tel:9846835808">
+                    +91 9846835808
+                </a>
+            </p>
+
+        </div>
+
+    </div>
+<script src="Contact.js"></script>
+</body>
+</html>
