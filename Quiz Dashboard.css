@@ -1,243 +1,426 @@
 /* =========================
-    GLOBAL RESET
+   QUIZ DASHBOARD.CSS
 ========================= */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* =========================
+   BODY
+========================= */
+
 body {
+
     background: linear-gradient(
         to bottom right,
         #050505,
-        #121417,
-        #1b1d20
+        #121212,
+        #1e1e1e
     );
+
     color: white;
+
     font-family: Arial, sans-serif;
+
     min-height: 100vh;
 }
 
 /* =========================
-    NAVBAR (Consistency with Home)
+   TOP NAVBAR
 ========================= */
+
 .top {
+
     background: linear-gradient(
         to right,
         #111111,
-        #1f1f1f,
+        #1e1e1e,
         #000000,
-        #1f1f1f,
+        #1e1e1e,
         #111111
     );
+
     height: auto;
+
     min-height: 120px;
+
     padding: 15px 30px;
+
     display: flex;
+
     justify-content: space-between;
+
     align-items: center;
+
     position: sticky;
+
     top: 0;
+
     z-index: 1000;
-    border-bottom: 2px solid #B8B8B8; /* Silver Border */
-    box-shadow: 0px 4px 15px rgba(184, 184, 184, 0.1);
+
+    border-bottom: 2px solid #ff9800;
+
+    box-shadow: 0px 4px 15px rgba(255, 152, 0, 0.15);
 }
 
-.nav_left, .nav {
+/* =========================
+   NAVIGATION
+========================= */
+
+.nav_left,
+.nav {
+
     display: flex;
+
     gap: 20px;
+
     flex: 1;
 }
 
 .nav {
+
     justify-content: flex-end;
 }
 
+/* =========================
+   LOGO
+========================= */
+
 .circle {
-    background-color: black;
-    border: 4px solid #E5E4E2;
+
+    background-color: #121212;
+
+    border: 4px solid #ff9800;
+
     border-radius: 50%;
+
     height: 90px;
+
     width: 90px;
+
     object-fit: cover;
-    box-shadow: 0px 0px 20px rgba(184, 184, 184, 0.3);
+
+    box-shadow: 0px 0px 20px rgba(255, 152, 0, 0.4);
+
+    transition: 0.3s;
+}
+
+.circle:hover {
+
+    transform: scale(1.05);
+
+    box-shadow: 0px 0px 28px rgba(255, 152, 0, 0.6);
 }
 
 /* =========================
-    NAV BUTTONS
+   NAV BUTTONS
 ========================= */
+
 .nav_button {
-    border: 2px solid #B8B8B8;
+
+    border: 2px solid #ff9800;
+
     border-radius: 12px;
+
     padding: 10px;
+
     background: #121212;
-    color: #B8B8B8;
+
+    color: #ff9800;
+
     font-weight: bold;
+
     width: 110px;
+
     height: 50px;
+
     transition: 0.4s;
+
     cursor: pointer;
 }
 
-.nav_button:hover, .active {
-    background: linear-gradient(to right, #9A9A9A, #E5E4E2);
-    color: black;
+.nav_button:hover,
+.active {
+
+    background: linear-gradient(
+        to right,
+        #ff9800,
+        #ff5722
+    );
+
+    color: white;
+
     transform: scale(1.05);
-    box-shadow: 0px 0px 20px rgba(184, 184, 184, 0.5);
+
+    box-shadow: 0px 0px 20px rgba(255, 152, 0, 0.5);
 }
 
 /* =========================
-    DASHBOARD TITLE
+   TITLE
 ========================= */
+
 .dashboard-title {
+
     text-align: center;
+
     font-size: 40px;
+
     margin: 30px 0;
-    color: #E5E4E2;
-    text-shadow: 0px 0px 12px rgba(184, 184, 184, 0.4);
+
+    color: #ff9800;
+
+    text-shadow: 0px 0px 12px rgba(255, 152, 0, 0.4);
 }
 
 /* =========================
-    GRID & CARDS
+   DASHBOARD GRID
 ========================= */
+
 .dashboard-container {
+
     display: grid;
+
     grid-template-columns: repeat(2, 1fr);
+
     gap: 25px;
+
     padding: 20px;
+
     max-width: 1200px;
+
     margin: 0 auto;
 }
 
+/* =========================
+   CARDS
+========================= */
+
 .card {
-    background: rgba(25, 27, 30, 0.8);
+
+    background: rgba(30, 30, 30, 0.92);
+
     padding: 25px;
+
     border-radius: 22px;
-    border: 1px solid rgba(184, 184, 184, 0.2);
+
+    border: 1px solid rgba(255, 152, 0, 0.2);
+
     backdrop-filter: blur(10px);
+
     transition: 0.4s;
+
+    box-shadow: 0px 8px 20px rgba(0,0,0,0.5);
 }
 
 .card:hover {
+
     transform: translateY(-6px);
-    border: 1px solid #E5E4E2;
-    box-shadow: 0px 10px 25px rgba(0,0,0,0.6);
+
+    border: 1px solid #ff9800;
+
+    box-shadow:
+        0px 10px 25px rgba(0,0,0,0.7),
+        0px 0px 20px rgba(255, 152, 0, 0.25);
 }
 
+/* =========================
+   CARD HEADINGS
+========================= */
+
 .card h2 {
+
     margin-bottom: 20px;
-    color: #B8B8B8;
-    border-left: 4px solid #B8B8B8;
+
+    color: #ff9800;
+
+    border-left: 4px solid #ff9800;
+
     padding-left: 15px;
 }
 
 /* =========================
-    PROGRESS BARS
+   PROGRESS
 ========================= */
+
 .progress-box span {
+
     display: block;
+
     margin-bottom: 8px;
-    color: #E5E4E2;
+
+    color: #ffb74d;
+
     font-weight: bold;
 }
 
 .progress {
+
     width: 100%;
+
     height: 15px;
+
     background: #2a2a2a;
+
     border-radius: 10px;
+
     overflow: hidden;
 }
 
 .progress-fill {
+
     height: 100%;
-    background: linear-gradient(to right, #B8B8B8, #E5E4E2);
-    box-shadow: 0px 0px 10px rgba(184, 184, 184, 0.4);
+
+    background: linear-gradient(
+        to right,
+        #ff9800,
+        #ff5722
+    );
+
+    box-shadow: 0px 0px 10px rgba(255, 152, 0, 0.4);
 }
 
 /* =========================
-    ADMIN PANEL
+   ADMIN INPUTS
 ========================= */
+
 .admin input {
+
     width: 100%;
+
     padding: 12px;
+
     margin: 10px 0;
-    border: 1px solid rgba(184, 184, 184, 0.2);
+
+    border: 1px solid rgba(255, 152, 0, 0.2);
+
     border-radius: 10px;
+
     background: #0a0a0a;
+
     color: white;
+
     outline: none;
-}
 
-.admin input:focus {
-    border: 1px solid #E5E4E2;
-}
-
-.admin button {
-    width: 100%;
-    padding: 12px;
-    margin-top: 10px;
-    border: none;
-    border-radius: 12px;
-    background: linear-gradient(to right, #B8B8B8, #E5E4E2);
-    color: black;
-    font-weight: bold;
-    cursor: pointer;
     transition: 0.3s;
 }
 
+.admin input:focus {
+
+    border: 1px solid #ff9800;
+
+    box-shadow: 0px 0px 10px rgba(255, 152, 0, 0.25);
+}
+
 /* =========================
-    RESPONSIVE DESIGN
+   ADMIN BUTTON
 ========================= */
 
-/* Tablets */
+.admin button {
+
+    width: 100%;
+
+    padding: 12px;
+
+    margin-top: 10px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    background: linear-gradient(
+        to right,
+        #ff9800,
+        #ff5722
+    );
+
+    color: white;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.admin button:hover {
+
+    transform: scale(1.02);
+
+    box-shadow: 0px 0px 15px rgba(255, 152, 0, 0.35);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
 @media (max-width: 992px) {
+
     .dashboard-container {
+
         grid-template-columns: 1fr;
+
         padding: 20px 10%;
     }
 }
 
 @media (max-width: 768px) {
+
     .top {
+
         flex-direction: column;
+
         gap: 15px;
+
         padding: 20px;
     }
 
-    .nav_left, .nav {
+    .nav_left,
+    .nav {
+
         justify-content: center;
+
         width: 100%;
     }
 
     .dashboard-title {
+
         font-size: 32px;
     }
 }
 
-/* Mobile */
 @media (max-width: 480px) {
+
     .nav_button {
+
         width: 90px;
+
         font-size: 13px;
+
         padding: 5px;
     }
 
     .circle {
+
         height: 70px;
+
         width: 70px;
     }
 
     .dashboard-container {
+
         padding: 15px;
     }
 
     .card {
+
         padding: 15px;
     }
 
     .dashboard-title {
+
         font-size: 26px;
     }
 }
